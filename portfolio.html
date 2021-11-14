@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <!-- шрифт шрифт Raleway 700 Roboto 400, 500, 700 и 900. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- стили css -->
+    <link href=css/styles.css rel=stylesheet>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a class="logo link" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
+        <ul class="nav-list list link">
+          <li class="header-item"><a class="nav-link link" href="./index.html"> Студия </a></li>
+          <li class="header-item"><a class="nav-link current link" href="./portfolio.html"> Портфолио </a></li>
+          <li class="header-item"><a class="nav-link link" href="Контакты"> Контакты </a></li>
+        </ul>
+      </nav>
+      <ul class="header-list list link">
+        <li>
+          <a class="header-tel link" href="tel:+380961111111">+380961111111</a>
+        </li>
+        <li>
+          <a class="header-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="projects">
+        <div class="filter">
+          <h1></h1>
+          <ul class="filter-list list">
+            <li class="filter-list-item">
+              <button class="button-filter" type="button">Все</button></li>
+            <li class="filter-list-item">
+              <button class="button-filter" type="button">Веб-сайты</button>
+            </li>
+            <li class="filter-list-item">
+              <button class="button-filter" type="button">Приложения</button>
+            </li>
+            <li class="filter-list-item">
+              <button class="button-filter" type="button">Дизайн</button></li>
+            <li class="filter-list-item">
+              <button class="button-filter" type="button">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
+      <!-- -------PROJECTS----- -->
+        <h2 class="projects-title"></h2>
+        <ul class="projects-list list">
+          <li class="projects-item">
+            <img
+              src="./portfolio/pr1.jpg"
+              alt="ноутбук с изображением членов команды"
+              width="379"
+              height="294"
+            />
+            <h3 class="projects-subtitle">Технокряк</h3>
+            <p class="projects-text">Веб-сайт</p>
+          </li>
+          <li class="projects-item">
+            <img
+              src="./portfolio/pr2.jpg"
+              alt="два баскетболиста борются за мяч"
+              width="379"
+              height="294"
+            />
+            <h3 class="projects-subtitle">Постер New Orlean vs Golden Star</h3>
+            <p class="projects-text">Дизайн</p>
+          </li>
+          <li class="projects-item">
+            <img
+              src="./portfolio/pr3.jpg"
+              alt="лого ресторана с изобржением рыбы"
+              width="379"
+              height="294"
+            />
+            <h3 class="projects-subtitle">Ресторан Seafood</h3>
+            <p class="projects-text">Приложение</p>
+          </li>
+          <li class="projects-item">
+            <img
+              src="./portfolio/pr4.jpg"
+              alt="черные студийные наушники"
+              width="379"
+              height="294"
+            />
+            <h3 class="projects-subtitle">Проект Prime</h3>
+            <p class="projects-text">Маркетинг</p>
+          </li>
+          <li class="projects-item">
+            <img
+              src="./portfolio/pr5.jpg"
+              alt="две коробки"
+              width="379"
+              height="294"
+            />
+            <h3 class="projects-subtitle">Проект Boxes</h3>
+            <p class="projects-text">Приложение</p>
+          </li>
+          <li class="projects-item">
+            <img
+              src="./portfolio/pr6.jpg"
+              alt="монитор с показаным сайтом"
+              width="379"
+              height="294"
+            />
+            <h3 class="projects-subtitle">Inspiration has no Borders</h3>
+            <p class="projects-text">Веб-сайт</p>
+          </li>
+          <li class="projects-item">
+            <img
+              src="./portfolio/pr7.jpg"
+              alt="открытая книга с названием издания"
+              width="379"
+              height="294"
+            />
+            <h3 class="projects-subtitle">Издание Limited Edition</h3>
+            <p class="projects-text">Дизайн</p>
+          </li>
+          <li class="projects-item">
+            <img
+              src="./portfolio/pr8.jpg"
+              alt="бирка проэкта"
+              width="379"
+              height="294"
+            />
+            <h3 class="projects-subtitle">Проект LAB</h3>
+            <p class="projects-text">Маркетинг</p>
+          </li>
+          <li class="projects-item">
+            <img
+              src="./portfolio/pr9.jpg"
+              alt="ноутбук с загруженым прилоением на экранеи "
+              width="379"
+              height="294"
+            />
+            <h3 class="projects-subtitle">Growing Business</h3>
+            <p class="projects-text">Приложение</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!--Подвал-->
+    <footer class="footer">
+      <!-- Лого -->
+      <a class="logo-footer link" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
+
+      <address class="address">
+        <p class="address-text">г. Киев, пр-т Леси Украинки, 26</p>
+        <a class="address-mail link" href="malito:mango@mail.pig"
+          >mango@mail.pig</a
+        >
+        <br>
+        <a class="address-tel link" href="tel:(111)222-33-44"
+          >(111) 222-33-44</a
+        >
+      </address>
+    </footer>
+  </body>
+</html>
