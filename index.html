@@ -12,39 +12,62 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- стили css -->
     <link href=css/styles.css rel=stylesheet>
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
-        <a class="logo link" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
-        <ul class="nav-list list link">
-          <li class="header-item"><a class="nav-link current link" href="./index.html"> Студия </a></li>
-          <li class="header-item"><a class="nav-link link" href="./portfolio.html"> Портфолио </a></li>
-          <li class="header-item"><a class="nav-link link" href="Контакты"> Контакты </a></li>
-        </ul>
-      </nav>
-      <ul class="header-list list link">
-        <li>
-          <a class="header-tel link" href="tel:+380961111111">+380961111111</a>
-        </li>
-        <li>
-          <a class="header-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a
+      <div class="container header-container">
+        <nav class="nav">
+          <a class="logo link" href="./index.html"
+            ><span class="logo-accent">Web</span>Studio</a
           >
-        </li>
-      </ul>
+          <ul class="nav-list list link">
+            <li class="header-item">
+              <a class="nav-link current link" href="./index.html"> Студия </a>
+            </li>
+            <li class="header-item">
+              <a class="nav-link link" href="./portfolio.html"> Портфолио </a>
+            </li>
+            <li class="header-item">
+              <a class="nav-link link" href="Контакты"> Контакты </a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-list list link">
+          <li>
+            <a class="header-tel link" href="tel:+380961111111"
+              >+380961111111</a
+            >
+          </li>
+          <li>
+            <a class="header-mail link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main class="main">
-      <div>
+
         <section class="hero">
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <div class="container hero-container">
+          <h1 class="hero-title ">Эффективные решения для вашего бизнеса</h1>
           <button class="hero-btn" type="button">Заказать услугу</button>
+        </div>
         </section>
-      </div>
+
       <!--Cекция benefits -->
-      <section class="benefits">
+      <section class="benefits section">
+        <div class="container">
         <h2 class="benefits-title"></h2>
         <ul class="benefits-list list">
           <li class="benefits-item">
@@ -76,9 +99,11 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
 
       <section class="about">
+        <div class="container">
         <h2 class="about-title">Чем мы занимаемся</h2>
         <ul class="about-list list">
           <li class="about-item">
@@ -105,54 +130,72 @@
             />
           </li>
         </ul>
+        </div>
       </section>
       <!--наша команда-->
-      <section class="team">
+      <section class="team section">
+        <div class="container">
         <h2 class="team-title">Наша команда</h2>
         <ul class="team-list list">
           <li class="team-item">
             <img src="./images/igor1.jpg" alt="Игорь Демьяненко" width="270" />
+            <div class="team-item-content">
             <h3 class="team-item-subtitle">Игорь Демьяненко</h3>
             <p class="team-item-text">Product Designer</p>
+          </div>
           </li>
+
           <li class="team-item">
             <img src="./images/olga2.jpg" alt="Ольга Репина" width="270" />
+            <div class="team-item-content">
             <h3 class="team-item-subtitle">Ольга Репина</h3>
             <p class="team-item-text">Frontend Developer</p>
+          </div>
           </li>
+
           <li class="team-item">
             <img
               src="./images/nikolai3.jpg"
               alt="Николай Тарасов"
               width="270"
             />
+            <div class="team-item-content">
             <h3 class="team-item-subtitle">Николай Тарасов</h3>
             <p class="team-item-text">Marketing</p>
+          </div>
           </li>
+
           <li class="team-item">
             <img src="./images/mihail3.jpg" alt="Михаил Ермаков" width="270" />
+            <div class="team-item-content">
             <h3 class="team-item-subtitle">Михаил Ермаков</h3>
             <p class="team-item-text">UI Designer</p>
+          </div>
           </li>
         </ul>
+        </div>
       </section>
     </main>
 
     <!--Подвал-->
     <footer class="footer">
+      <div class="container">
       <!-- Лого -->
-      <a class="logo-footer link" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
+      <a class="logo-footer link" href="./index.html"
+        ><span class="logo-accent">Web</span>Studio</a
+      >
 
       <address class="address">
         <p class="address-text">г. Киев, пр-т Леси Украинки, 26</p>
         <a class="address-mail link" href="malito:mango@mail.pig"
           >mango@mail.pig</a
         >
-        <br>
+        <br />
         <a class="address-tel link" href="tel:(111)222-33-44"
           >(111) 222-33-44</a
         >
       </address>
+      </div>
     </footer>
   </body>
 </html>
