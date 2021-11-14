@@ -372,7 +372,7 @@ projects-text
 }
 .projects-item {
   background: #ffffff;
-  border: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   box-sizing: border-box;
   flex-basis: calc(100% / 3 - var(--project-set-gap));
   margin-right: var(--project-set-gap);
