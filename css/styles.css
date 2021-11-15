@@ -208,7 +208,7 @@ body {
   line-height: 1.71;
 }
 /* -------------------ABOUT ---------------------- */
-.about-section {
+.about {
   padding-bottom: 94px;
 }
 .about-title {
@@ -262,7 +262,8 @@ team-item-text */
   margin-right: 0; */
 
 .team-item-content {
-  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-item-subtitle {
   font-weight: 500;
@@ -278,8 +279,6 @@ team-item-text */
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-
-  margin-bottom: 30px;
 }
 
 /* -------------------FOOTER ---------------------- */
@@ -296,7 +295,8 @@ team-item-text */
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--logo-footer-color);
-  margin-bottom: 10px;
+  display: block;
+  margin-bottom: 20px;
 }
 .logo-accent {
   color: var(--accent-color);
@@ -308,17 +308,21 @@ team-item-text */
   line-height: 1.71;
   /* letter-spacing: 0.03em; */
 }
+.footer-address {
+}
 .address-text {
   color: #ffffff;
   margin-bottom: 9px;
+  display: block;
 }
 .address-mail {
   color: rgba(255, 255, 255, 0.6);
-
   margin-bottom: 9px;
+  display: block;
 }
 .address-tel {
   color: rgba(255, 255, 255, 0.6);
+  display: block;
 }
 
 /* -------------------PORTFOLIO ---------------------- */
@@ -327,10 +331,10 @@ team-item-text */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .filter-list-item {
   margin-right: 8px;
-  margin-bottom: 50px;
 }
 .filter-list-item:last-child {
   margin-right: 0;
@@ -367,19 +371,21 @@ projects-text
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -1 * var(--project-set-gap);
-  margin-bottom: -1 * var(--project-set-gap);
+  margin-right: calc(-1 * var(--project-set-gap));
+  margin-bottom: calc(-1 * var(--project-set-gap));
 }
 .projects-item {
   background: #ffffff;
-  border-bottom: 1px solid #eeeeee;
   box-sizing: border-box;
   flex-basis: calc(100% / 3 - var(--project-set-gap));
   margin-right: var(--project-set-gap);
   margin-bottom: var(--project-set-gap);
 }
 .projects-item-content {
-  margin: 20px 24px;
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .projects-subtitle {
